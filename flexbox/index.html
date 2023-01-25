@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="hu" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Flexbox gyakorlat</title>
+    <style>
+      .flex_container {
+      display: flex;
+      /*flex-direction: row;*/
+      /*flex-direction: row-reverse;*/
+      /*flex-direction: column;*/
+      /*flex-direction: column-reverse;*/
+      /*flex-wrap: wrap-reverse;*/
+      /*flex-wrap: nowrap;*/
+      flex-wrap: wrap;
+      background-color: #ff7417;
+      }
+
+      .flex_container div {
+        background-color: #eeedeb;
+        margin: 13px;
+        padding: 20px;
+        font-size: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+  <!-- Brand -->
+  <a class="navbar-brand" href="#">Navbar</a>
+
+  <!-- Toggler/collapsibe Button -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <!-- Navbar links -->
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+    <div class="flex_container">
+      <div>Elem 1</div>
+      <div>Elem 2</div>
+      <div>Elem 3</div>
+      <div>Elem 4</div>
+      <div>Elem 5</div>
+      <div>Elem 6</div>
+    </div>
+    <div>
+      <button type="button" name="button1" class="btn">Basic</button>
+      <button type="button" name="button2" class="btn btn-primary">Primary</button>
+      <button type="button" name="button3" class="btn btn-secondary">Secondary</button>
+      <button type="button" name="button4" class="btn btn-success">Success</button>
+      <button type="button" name="button5" class="btn btn-info">Info</button>
+      <button type="button" name="button6" class="btn btn-warning">Warning</button>
+      <button type="button" name="button7" class="btn btn-danger">Danger</button>
+      <button type="button" name="button8" class="btn btn-dark">Dark</button>
+      <button type="button" name="button9" class="btn btn-light">Light</button>
+      <button type="button" name="button10" class="btn btn-link">Link</button>
+    </div>
+    <div>
+      <button type="button" name="button2" class="btn btn-outline-primary">Primary</button>
+      <button type="button" name="button3" class="btn btn-outline-secondary btn-lg">Secondary</button>
+      <button type="button" name="button4" class="btn btn-outline-success">Success</button>
+      <button type="button" name="button5" class="btn btn-outline-info btn-sm">Info</button>
+      <button type="button" name="button6" class="btn btn-outline-warning">Warning</button>
+      <button type="button" name="button7" class="btn btn-outline-danger btn-block">Danger</button>
+      <button type="button" name="button8" class="btn btn-outline-dark">Dark</button>
+      <button type="button" name="button9" class="btn btn-outline-light">Light</button>
+    </div>
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1>Bootstrap gyakorlat</h1>
+        <p>Ez egy is Bootstrap CSS, HTML gyakorlat a fejlődésem érdekében... ;)</p>
+      </div>
+    </div>
+    <button type="button" data-toggle="collapse" data-target="#demo">Összecsukható</button>
+    <div id="demo" class="collapse">
+      <p>Ez a szöveg összecsukható...</p>
+    </div>
+    <br>
+    <img class="rounded" src="img/elcamino.jpg" alt="EL Camino" width="20%" />
+    <img class="rounded-circle" src="img/elcamino.jpg" alt="EL Camino" width="20%" />
+    <img class="img-thumbnail" src="img/elcamino.jpg" alt="EL Camino" width="10%" />
+    <br>
+    <img class="mx-auto d-block" src="img/elcamino.jpg" alt="EL Camino" />
+    <br>
+    <form class="form-inline" action="/action_page.php">
+  <label for="email">Email address:</label>
+  <input type="email" class="form-control" placeholder="Enter email" id="email">
+  <label for="pwd">Password:</label>
+  <input type="password" class="form-control" placeholder="Enter password" id="pwd">
+  <div class="form-check">
+    <label class="form-check-label">
+      <input class="form-check-input" type="checkbox"> Remember me
+    </label>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+  </body>
+</html>
